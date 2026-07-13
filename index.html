@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="color-scheme" content="dark light">
+
+  <title>Zentrix — Premium Software Development & Digital Solutions</title>
+  <meta name="description" content="Zentrix builds secure, scalable, and beautifully designed software, web platforms, mobile apps, cloud solutions, and AI products for startups and enterprises.">
+  <meta name="keywords" content="software development, web development, mobile apps, UI UX design, cloud solutions, AI development, IT consulting, Zentrix">
+  <meta name="author" content="Zentrix">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zentrix — Building Digital Solutions For The Future">
+  <meta property="og:description" content="Premium software engineering, cloud, AI, mobile, web, and digital transformation services.">
+  <meta property="og:image" content="assets/images/zentrix-brand-card.png">
+  <meta property="og:site_name" content="Zentrix">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" href="assets/logo.png" as="image">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css" integrity="sha512-F/yRpRY8sctKzP7exU5PLGejwg/QtjDX6CIy/41nApe7JqdZgCcCzJTNq9Rcp/XwbeeTGillGevBakruY15pxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/slider.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <img class="loader__logo" src="assets/logo.png" alt="">
+      <div class="loader__line"><span></span></div>
+      <p>Engineering what comes next</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Zentrix home">
+        <img src="assets/logo.png" alt="Zentrix — Your Digital Transformation Partner">
+      </a>
+
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-links">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#solutions">Solutions</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-link" href="#clients">Clients</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <span class="theme-toggle__track" aria-hidden="true">
+            <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" focusable="false"><path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M6.34 6.34 4.93 4.93m14.14 14.14-1.41-1.41m0-11.32 1.41-1.41M4.93 19.07l1.41-1.41M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/></svg>
+            <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" focusable="false"><path d="M20.5 14.1A8.5 8.5 0 0 1 9.9 3.5 8.5 8.5 0 1 0 20.5 14.1Z"/></svg>
+            <span class="theme-toggle__thumb"></span>
+          </span>
+        </button>
+        <a class="button button--small button--primary nav-cta" href="#contact">Start a Project</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-panel">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <canvas class="particle-canvas" id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero__glow hero__glow--one" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--two" aria-hidden="true"></div>
+
+      <div class="container hero__layout">
+        <div class="hero__content reveal reveal--left">
+          <span class="eyebrow"><span class="eyebrow__dot"></span> Software. Cloud. AI. Growth.</span>
+          <h1 id="hero-title">Building Digital Solutions <span class="text-gradient">For The Future</span></h1>
+          <p class="hero__lead">Zentrix turns ambitious ideas into secure, scalable digital products. We combine product strategy, human-centered design, and elite engineering to move businesses forward.</p>
+          <div class="hero__actions">
+            <a class="button button--primary button--shine" href="#contact">
+              Start a Project
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+            <a class="button button--ghost" href="#services">Explore Services</a>
+          </div>
+          <div class="hero__trust" aria-label="Company service qualities">
+            <div><strong>24/7</strong><span>Technical support</span></div>
+            <div><strong>Agile</strong><span>Delivery model</span></div>
+            <div><strong>Secure</strong><span>By design</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal--right" data-parallax="0.08" aria-label="Animated software development dashboard illustration">
+          <div class="orbit orbit--one" aria-hidden="true"><span></span></div>
+          <div class="orbit orbit--two" aria-hidden="true"><span></span></div>
+
+          <div class="code-window glass-card">
+            <div class="code-window__bar">
+              <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span>innovation.js</span>
+              <span class="code-window__status"><i></i> Live</span>
+            </div>
+            <div class="code-window__body" aria-hidden="true">
+              <span class="code-line"><b>01</b><code><em>const</em> future = <strong>await</strong> Zentrix.build({</code></span>
+              <span class="code-line"><b>02</b><code>&nbsp;&nbsp;strategy: <q>bold</q>,</code></span>
+              <span class="code-line"><b>03</b><code>&nbsp;&nbsp;design: <q>human</q>,</code></span>
+              <span class="code-line"><b>04</b><code>&nbsp;&nbsp;technology: <q>scalable</q>,</code></span>
+              <span class="code-line"><b>05</b><code>&nbsp;&nbsp;security: <strong>true</strong></code></span>
+              <span class="code-line"><b>06</b><code>});</code></span>
+              <span class="code-line code-line--typing"><b>07</b><code>future.launch();<span class="typing-cursor"></span></code></span>
+            </div>
+            <div class="code-window__footer">
+              <span><i class="status-dot"></i> Deployment successful</span>
+              <span>99.99% uptime</span>
+            </div>
+          </div>
+
+          <div class="floating-card floating-card--analytics glass-card" aria-hidden="true">
+            <span class="floating-card__icon">
+              <svg viewBox="0 0 24 24"><path d="M4 19V9m6 10V5m6 14v-7m4 7H2"/></svg>
+            </span>
+            <div><small>Performance</small><strong>+184%</strong></div>
+            <span class="trend">↗</span>
+          </div>
+
+          <div class="floating-card floating-card--ai glass-card" aria-hidden="true">
+            <span class="ai-pulse"></span>
+            <div><small>AI Engine</small><strong>Optimizing</strong></div>
+          </div>
+
+          <div class="floating-card floating-card--security glass-card" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.7 2.8 8.2 7 10 4.2-1.8 7-5.3 7-10V6l-7-3Zm-3 9 2 2 4-4"/></svg>
+            <div><small>Security</small><strong>Protected</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to about section">
+        <span></span><small>Scroll</small>
+      </a>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="eyebrow">About Zentrix</span>
+            <h2 id="about-title">Technology with purpose. <span class="text-gradient">Partnership with impact.</span></h2>
+          </div>
+          <p>We are a digital product and engineering company helping organizations modernize, innovate, and grow through dependable technology.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="story-card glass-card reveal reveal--left">
+            <span class="card-label">Our story</span>
+            <h3>From complex challenges to elegant digital experiences.</h3>
+            <p>Zentrix was created around a simple belief: great technology should feel clear, useful, and human. Our multidisciplinary team works as an extension of your business, from discovery and architecture to launch and long-term optimization.</p>
+            <a class="text-link" href="#contact">Meet your technology partner <span>→</span></a>
+          </article>
+
+          <div class="principles-grid reveal reveal--right">
+            <article class="principle-card">
+              <span class="principle-card__number">01</span>
+              <h3>Mission</h3>
+              <p>Build high-value digital products that solve real problems and create measurable business growth.</p>
+            </article>
+            <article class="principle-card">
+              <span class="principle-card__number">02</span>
+              <h3>Vision</h3>
+              <p>Become the trusted technology partner behind the next generation of exceptional businesses.</p>
+            </article>
+            <article class="principle-card principle-card--wide">
+              <span class="principle-card__number">03</span>
+              <h3>Why choose us</h3>
+              <p>Strategic thinking, transparent collaboration, senior engineering, and uncompromising attention to quality.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="stats-grid" aria-label="Company statistics">
+          <article class="stat-card reveal">
+            <strong><span class="counter" data-target="3" data-suffix="+">0</span></strong>
+            <span>Projects completed</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong><span class="counter" data-target="3" data-suffix="+">0</span></strong>
+            <span>Happy clients</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong><span class="counter" data-target="1" data-suffix="+">0</span></strong>
+            <span>Years experience</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong><span class="counter" data-target="30" data-suffix="+">0</span></strong>
+            <span>Technologies used</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section section--tinted" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">What we do</span>
+          <h2 id="services-title">End-to-end services for <span class="text-gradient">digital excellence</span></h2>
+          <p>From the first sketch to production scale, we provide the strategy, design, engineering, and support your product needs.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3m8-6 4 3-4 3m-2-9-4 12"/></svg></span>
+            <span class="service-card__index">01</span>
+            <h3>Software Development</h3>
+            <p>Custom, scalable software engineered around your workflows, users, and growth strategy.</p>
+            <a href="#contact" aria-label="Learn more about software development">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm0 4h18M7 7h.01M10 7h.01"/></svg></span>
+            <span class="service-card__index">02</span>
+            <h3>Web Development</h3>
+            <p>Fast, accessible, conversion-focused websites and platforms built for every screen.</p>
+            <a href="#contact" aria-label="Learn more about web development">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm2 3h4m-3 14h2"/></svg></span>
+            <span class="service-card__index">03</span>
+            <h3>Mobile App Development</h3>
+            <p>Intuitive mobile experiences with robust architecture and seamless performance.</p>
+            <a href="#contact" aria-label="Learn more about mobile app development">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4V4Zm10 0h6v6h-6V4ZM4 14h6v6H4v-6Zm10 3h6m-3-3v6"/></svg></span>
+            <span class="service-card__index">04</span>
+            <h3>UI/UX Design</h3>
+            <p>Research-led interfaces that simplify complexity and make every interaction feel natural.</p>
+            <a href="#contact" aria-label="Learn more about UI UX design">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .5-8A6 6 0 0 0 6 8.5 4.8 4.8 0 0 0 7 18Z"/></svg></span>
+            <span class="service-card__index">05</span>
+            <h3>Cloud Solutions</h3>
+            <p>Secure cloud architecture, migration, DevOps, automation, and continuous optimization.</p>
+            <a href="#contact" aria-label="Learn more about cloud solutions">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M9 4h6v3h3v4h2v6h-3v3H7v-3H4v-6h2V7h3V4Zm1 7h.01M14 11h.01M9 15c2 1 4 1 6 0"/></svg></span>
+            <span class="service-card__index">06</span>
+            <h3>AI Solutions</h3>
+            <p>Practical AI, automation, intelligent assistants, and data-driven products that create value.</p>
+            <a href="#contact" aria-label="Learn more about AI solutions">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M4 6c0-2 3.6-3 8-3s8 1 8 3-3.6 3-8 3-8-1-8-3Zm0 0v6c0 2 3.6 3 8 3s8-1 8-3V6m-16 6v6c0 2 3.6 3 8 3s8-1 8-3v-6"/></svg></span>
+            <span class="service-card__index">07</span>
+            <h3>Database Solutions</h3>
+            <p>Reliable data architecture, integrations, analytics foundations, and performance tuning.</p>
+            <a href="#contact" aria-label="Learn more about database solutions">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.7 2.8 8.2 7 10 4.2-1.8 7-5.3 7-10V6l-7-3Zm-3 9 2 2 4-4"/></svg></span>
+            <span class="service-card__index">08</span>
+            <h3>Cyber Security</h3>
+            <p>Security assessments, hardened systems, identity controls, and proactive risk reduction.</p>
+            <a href="#contact" aria-label="Learn more about cyber security">Explore <span>↗</span></a>
+          </article>
+          <article class="service-card reveal" data-tilt>
+            <span class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M4 20v-8m0-4V4m8 16v-5m0-4V4m8 16v-3m0-4V4M2 12h4m4 3h4m4 2h4"/></svg></span>
+            <span class="service-card__index">09</span>
+            <h3>IT Consulting</h3>
+            <p>Clear technology roadmaps, architecture guidance, audits, and transformation leadership.</p>
+            <a href="#contact" aria-label="Learn more about IT consulting">Explore <span>↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions section" id="solutions" aria-labelledby="solutions-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="eyebrow">Solutions</span>
+            <h2 id="solutions-title">Built around your <span class="text-gradient">business reality</span></h2>
+          </div>
+          <p>We align product, design, engineering, and data into one practical roadmap—whether you are launching, modernizing, or scaling.</p>
+        </div>
+
+        <div class="solution-showcase">
+          <article class="solution-panel solution-panel--featured reveal reveal--left">
+            <div class="solution-panel__content">
+              <span class="card-label">For startups</span>
+              <h3>Launch with speed, confidence, and room to scale.</h3>
+              <p>Validate your idea, define a focused MVP, and reach the market with a resilient product foundation.</p>
+              <ul class="check-list">
+                <li>Product discovery and MVP planning</li>
+                <li>Rapid design and development</li>
+                <li>Cloud-ready technical architecture</li>
+              </ul>
+            </div>
+            <div class="solution-graphic" aria-hidden="true">
+              <div class="solution-graphic__ring"></div>
+              <div class="solution-graphic__core"><span>Z</span></div>
+              <span class="solution-node solution-node--1">Idea</span>
+              <span class="solution-node solution-node--2">Build</span>
+              <span class="solution-node solution-node--3">Scale</span>
+            </div>
+          </article>
+
+          <div class="solution-stack reveal reveal--right">
+            <article class="solution-panel">
+              <span class="card-label">For growing businesses</span>
+              <h3>Modernize systems and unlock operational efficiency.</h3>
+              <p>Replace fragmented workflows with integrated platforms, automation, and actionable data.</p>
+              <a class="text-link" href="#contact">Plan your transformation <span>→</span></a>
+            </article>
+            <article class="solution-panel">
+              <span class="card-label">For enterprises</span>
+              <h3>Deliver dependable innovation at enterprise scale.</h3>
+              <p>Secure architecture, cloud enablement, platform engineering, and expert delivery governance.</p>
+              <a class="text-link" href="#contact">Talk to an architect <span>→</span></a>
+            </article>
+          </div>
+        </div>
+
+        <div class="process" aria-label="Our delivery process">
+          <article class="process-step reveal"><span>01</span><h3>Discover</h3><p>Goals, users, opportunities, risks.</p></article>
+          <article class="process-step reveal"><span>02</span><h3>Design</h3><p>Flows, prototypes, product system.</p></article>
+          <article class="process-step reveal"><span>03</span><h3>Build</h3><p>Agile engineering and quality assurance.</p></article>
+          <article class="process-step reveal"><span>04</span><h3>Launch</h3><p>Release, monitor, learn, improve.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="technology section section--tinted" aria-labelledby="technology-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">Technology stack</span>
+          <h2 id="technology-title">Modern tools. <span class="text-gradient">Proven architecture.</span></h2>
+          <p>We select technology based on product goals—not trends—so your solution remains maintainable, secure, and ready for change.</p>
+        </div>
+      </div>
+
+      <div class="marquee marquee--technologies" aria-label="Technology stack carousel">
+        <div class="marquee__track">
+          <div class="tech-badge"><span>H5</span>HTML5</div>
+          <div class="tech-badge"><span>C3</span>CSS3</div>
+          <div class="tech-badge"><span>JS</span>JavaScript</div>
+          <div class="tech-badge"><span>RE</span>React</div>
+          <div class="tech-badge"><span>NO</span>Node.js</div>
+          <div class="tech-badge"><span>PY</span>Python</div>
+          <div class="tech-badge"><span>JV</span>Java</div>
+          <div class="tech-badge"><span>PH</span>PHP</div>
+          <div class="tech-badge"><span>CL</span>Cloud</div>
+          <div class="tech-badge"><span>DB</span>Database</div>
+          <div class="tech-badge"><span>AI</span>Artificial Intelligence</div>
+          <div class="tech-badge"><span>H5</span>HTML5</div>
+          <div class="tech-badge"><span>C3</span>CSS3</div>
+          <div class="tech-badge"><span>JS</span>JavaScript</div>
+          <div class="tech-badge"><span>RE</span>React</div>
+          <div class="tech-badge"><span>NO</span>Node.js</div>
+          <div class="tech-badge"><span>PY</span>Python</div>
+          <div class="tech-badge"><span>JV</span>Java</div>
+          <div class="tech-badge"><span>PH</span>PHP</div>
+          <div class="tech-badge"><span>CL</span>Cloud</div>
+          <div class="tech-badge"><span>DB</span>Database</div>
+          <div class="tech-badge"><span>AI</span>Artificial Intelligence</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients section" id="clients" aria-labelledby="clients-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">Trusted relationships</span>
+          <h2 id="clients-title">Trusted by ambitious <span class="text-gradient">clients and teams</span></h2>
+        </div>
+      </div>
+
+      <div class="client-marquee" aria-label="Client logo carousel">
+        <div class="client-marquee__track">
+          <div class="client-logo"><img src="assets/client-logo-1.png" alt="Nexora Digital Labs"></div>
+          <div class="client-logo"><img src="assets/client-logo-2.png" alt="Orbital Systems"></div>
+          <div class="client-logo"><img src="assets/client-logo-3.png" alt="Verdant Commerce"></div>
+          <div class="client-logo"><img src="assets/client-logo-4.png" alt="Lumina Health"></div>
+          <div class="client-logo"><img src="assets/client-logo-5.png" alt="Altitude Cloud"></div>
+          <div class="client-logo"><img src="assets/client-logo-6.png" alt="Kinetiq Ventures"></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/client-logo-1.png" alt=""></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/client-logo-2.png" alt=""></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/client-logo-3.png" alt=""></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/client-logo-4.png" alt=""></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/client-logo-5.png" alt=""></div>
+          <div class="client-logo" aria-hidden="true"><img src="assets/client-logo-6.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section section--tinted" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="eyebrow">Selected work</span>
+            <h2 id="portfolio-title">Digital products designed to <span class="text-gradient">perform</span></h2>
+          </div>
+          <p>A sample of product experiences, enterprise platforms, and intelligent systems we can create for modern organizations.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <article class="project-card project-card--large reveal">
+            <div class="project-card__media">
+              <img src="assets/images/project-fintech.svg" alt="Fintech analytics dashboard interface">
+              <span class="project-card__category">Fintech Platform</span>
+            </div>
+            <div class="project-card__content">
+              <div>
+                <h3>NexaFlow Finance Suite</h3>
+                <p>A secure financial operations platform with real-time analytics, automated reconciliation, and role-based workflows.</p>
+              </div>
+              <div class="project-card__footer">
+                <ul class="tag-list"><li>Web App</li><li>Cloud</li><li>Analytics</li></ul>
+                <a class="icon-button" href="#contact" aria-label="View NexaFlow project"><span>↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              <img src="assets/images/project-health.svg" alt="Digital healthcare mobile application interface">
+              <span class="project-card__category">HealthTech</span>
+            </div>
+            <div class="project-card__content">
+              <h3>CareSphere Mobile</h3>
+              <p>A patient-first mobile ecosystem for appointments, virtual care, and secure health records.</p>
+              <div class="project-card__footer">
+                <ul class="tag-list"><li>Mobile</li><li>UX</li><li>API</li></ul>
+                <a class="icon-button" href="#contact" aria-label="View CareSphere project"><span>↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              <img src="assets/images/project-commerce.svg" alt="Premium e-commerce storefront interface">
+              <span class="project-card__category">E-commerce</span>
+            </div>
+            <div class="project-card__content">
+              <h3>Atelier Commerce</h3>
+              <p>A high-conversion retail experience with intelligent discovery and omnichannel management.</p>
+              <div class="project-card__footer">
+                <ul class="tag-list"><li>Commerce</li><li>CMS</li><li>SEO</li></ul>
+                <a class="icon-button" href="#contact" aria-label="View Atelier Commerce project"><span>↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              <img src="assets/images/project-ai.svg" alt="Artificial intelligence workflow automation interface">
+              <span class="project-card__category">AI Automation</span>
+            </div>
+            <div class="project-card__content">
+              <h3>Synapse AI Copilot</h3>
+              <p>An enterprise AI assistant that accelerates knowledge work and automates repetitive processes.</p>
+              <div class="project-card__footer">
+                <ul class="tag-list"><li>AI</li><li>Automation</li><li>Data</li></ul>
+                <a class="icon-button" href="#contact" aria-label="View Synapse AI project"><span>↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--wide reveal">
+            <div class="project-card__media">
+              <img src="assets/images/project-cloud.svg" alt="Cloud infrastructure monitoring platform interface">
+              <span class="project-card__category">Cloud Operations</span>
+            </div>
+            <div class="project-card__content">
+              <h3>OrbitOps Control Center</h3>
+              <p>A unified cloud operations hub for deployment, observability, security posture, and cost intelligence.</p>
+              <div class="project-card__footer">
+                <ul class="tag-list"><li>DevOps</li><li>Cloud</li><li>Security</li></ul>
+                <a class="icon-button" href="#contact" aria-label="View OrbitOps project"><span>↗</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <span class="eyebrow">Client feedback</span>
+          <h2 id="testimonials-title">Partnerships built on <span class="text-gradient">trust and outcomes</span></h2>
+          <p>What clients value most: thoughtful collaboration, technical confidence, and work that delivers.</p>
+        </div>
+
+        <div class="testimonial-slider reveal" id="testimonial-slider" aria-roledescription="carousel" aria-label="Client testimonials">
+          <div class="testimonial-slider__viewport">
+            <div class="testimonial-slider__track">
+              <article class="testimonial-slide" aria-label="Testimonial 1 of 4">
+                <div class="testimonial-card glass-card">
+                  <div class="testimonial-card__top">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                  </div>
+                  <blockquote>Zentrix took a complex operational challenge and turned it into a platform our entire organization adopted quickly. Their team brought clarity, speed, and exceptional technical judgment.</blockquote>
+                  <div class="testimonial-author">
+                    <img src="assets/images/avatar-1.svg" alt="Portrait illustration of Maya Fernando">
+                    <div><strong>Maya Fernando</strong><span>COO, Nexora Digital Labs</span></div>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-slide" aria-label="Testimonial 2 of 4">
+                <div class="testimonial-card glass-card">
+                  <div class="testimonial-card__top">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                  </div>
+                  <blockquote>They did more than build our product. They challenged assumptions, simplified the experience, and gave us an architecture that confidently supports our next stage of growth.</blockquote>
+                  <div class="testimonial-author">
+                    <img src="assets/images/avatar-2.svg" alt="Portrait illustration of Daniel Perera">
+                    <div><strong>Daniel Perera</strong><span>Founder, Kinetiq Ventures</span></div>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-slide" aria-label="Testimonial 3 of 4">
+                <div class="testimonial-card glass-card">
+                  <div class="testimonial-card__top">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                  </div>
+                  <blockquote>The communication was transparent from day one, and the quality was consistently high. Our new customer platform is faster, easier to use, and far simpler to maintain.</blockquote>
+                  <div class="testimonial-author">
+                    <img src="assets/images/avatar-3.svg" alt="Portrait illustration of Amara Silva">
+                    <div><strong>Amara Silva</strong><span>Digital Director, Verdant Commerce</span></div>
+                  </div>
+                </div>
+              </article>
+              <article class="testimonial-slide" aria-label="Testimonial 4 of 4">
+                <div class="testimonial-card glass-card">
+                  <div class="testimonial-card__top">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+                  </div>
+                  <blockquote>Zentrix balanced security, usability, and delivery pressure brilliantly. The team felt like a genuine extension of ours, and the result exceeded stakeholder expectations.</blockquote>
+                  <div class="testimonial-author">
+                    <img src="assets/images/avatar-4.svg" alt="Portrait illustration of Ruwan Jayasinghe">
+                    <div><strong>Ruwan Jayasinghe</strong><span>Technology Lead, Lumina Health</span></div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="testimonial-slider__controls">
+            <div class="slider-dots" role="tablist" aria-label="Choose testimonial">
+              <button class="slider-dot active" type="button" role="tab" aria-selected="true" aria-label="Show testimonial 1"></button>
+              <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial 2"></button>
+              <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial 3"></button>
+              <button class="slider-dot" type="button" role="tab" aria-selected="false" aria-label="Show testimonial 4"></button>
+            </div>
+            <div class="slider-arrows">
+              <button class="slider-arrow" id="testimonial-prev" type="button" aria-label="Previous testimonial">←</button>
+              <button class="slider-arrow" id="testimonial-next" type="button" aria-label="Next testimonial">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us section section--tinted" aria-labelledby="why-us-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <span class="eyebrow">The Zentrix advantage</span>
+            <h2 id="why-us-title">A team designed for <span class="text-gradient">dependable delivery</span></h2>
+          </div>
+          <p>We bring together the people, process, and engineering discipline required to turn ambitious digital initiatives into lasting business value.</p>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-card__icon">01</span>
+            <h3>Experienced developers</h3>
+            <p>Senior specialists who understand product thinking as well as technology.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">02</span>
+            <h3>Quality assurance</h3>
+            <p>Quality is built into each sprint through testing, review, and automation.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">03</span>
+            <h3>Modern technologies</h3>
+            <p>Pragmatic, future-ready stacks selected for performance and maintainability.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">04</span>
+            <h3>On-time delivery</h3>
+            <p>Clear milestones, visible progress, active risk management, and no surprises.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">05</span>
+            <h3>Customer-focused</h3>
+            <p>Every decision is connected to your users, priorities, and business outcomes.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-card__icon">06</span>
+            <h3>Long-term support</h3>
+            <p>Continuous improvement, monitoring, and partnership beyond launch day.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="container contact__layout">
+        <div class="contact__content reveal reveal--left">
+          <span class="eyebrow">Let’s build something meaningful</span>
+          <h2 id="contact-title">Ready to create your <span class="text-gradient">next digital advantage?</span></h2>
+          <p>Share your idea, challenge, or roadmap. Our team will respond with thoughtful next steps and a clear path forward.</p>
+
+          <div class="contact-details">
+            <a href="mailto:hello@zentrix.tech">
+              <span class="contact-details__icon"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm0 1 9 7 9-7"/></svg></span>
+              <span><small>Email</small><strong>zentrix.techsolutions@gmail.com</strong></span>
+            </a>
+            <a href="tel:+94112345678">
+              <span class="contact-details__icon"><svg viewBox="0 0 24 24"><path d="M6.6 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-2.6l-4.2-1-1.2 2.1c-4.5-1.9-8.2-5.6-10.1-10.1l2.1-1.2L6.6 3Z"/></svg></span>
+              <span><small>Phone</small><strong>+94 78 622 6320</strong></span>
+            </a>
+            <div>
+              <span class="contact-details__icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/></svg></span>
+              <span><small>Location</small><strong>Trincomalee, Sri Lanka</strong></span>
+            </div>
+          </div>
+
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn"><span>in</span></a>
+            <a href="#" aria-label="Facebook"><span>f</span></a>
+            <a href="#" aria-label="Instagram"><span>ig</span></a>
+            <a href="#" aria-label="GitHub"><span>gh</span></a>
+          </div>
+        </div>
+
+        <div class="contact-form-card glass-card reveal reveal--right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <input id="name" name="name" type="text" autocomplete="name" placeholder=" " required minlength="2">
+                <label for="name">Your name *</label>
+                <span class="field-error" id="name-error"></span>
+              </div>
+              <div class="form-field">
+                <input id="email" name="email" type="email" autocomplete="email" placeholder=" " required>
+                <label for="email">Email address *</label>
+                <span class="field-error" id="email-error"></span>
+              </div>
+              <div class="form-field">
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder=" ">
+                <label for="phone">Phone number</label>
+                <span class="field-error" id="phone-error"></span>
+              </div>
+              <div class="form-field">
+                <input id="company" name="company" type="text" autocomplete="organization" placeholder=" ">
+                <label for="company">Company</label>
+                <span class="field-error" id="company-error"></span>
+              </div>
+              <div class="form-field form-field--full">
+                <textarea id="message" name="message" rows="5" placeholder=" " required minlength="10"></textarea>
+                <label for="message">Tell us about your project *</label>
+                <span class="field-error" id="message-error"></span>
+              </div>
+            </div>
+            <button class="button button--primary button--full button--shine" type="submit">
+              <span>Send Project Inquiry</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 3 18 9-18 9 4-9-4-9Zm4 9h14"/></svg>
+            </button>
+            <p class="form-note">By submitting, you agree to be contacted about your inquiry.</p>
+            <div class="form-success" id="form-success" role="status" aria-live="polite">
+              <span>✓</span>
+              <div><strong>Thank you!</strong><p>Your message has been received. We’ll be in touch soon.</p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home"><img src="assets/logo.png" alt="Zentrix"></a>
+        <p>Building secure, scalable, and human-centered digital products for ambitious organizations.</p>
+        <span class="footer-badge"><i></i> Available for new projects</span>
+      </div>
+
+      <div class="footer-column">
+        <h2>Quick links</h2>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h2>Services</h2>
+        <a href="#services">Software Development</a>
+        <a href="#services">Web & Mobile</a>
+        <a href="#services">Cloud & AI</a>
+        <a href="#services">IT Consulting</a>
+      </div>
+
+      <div class="footer-column footer-newsletter">
+        <h2>Stay connected</h2>
+        <p>Insights on digital products, engineering, and technology strategy.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" type="email" placeholder="Email address" required>
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+        <span class="newsletter-message" id="newsletter-message" role="status" aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="current-year">2026</span> Zentrix. All rights reserved.</p>
+      <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
