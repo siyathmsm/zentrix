@@ -1,0 +1,150 @@
+/* =========================================================
+   Zentrix — Motion and reveal utilities
+   ========================================================= */
+
+@keyframes loader-fallback-hide {
+  to { visibility: hidden; opacity: 0; }
+}
+
+@keyframes loader-logo {
+  0% { opacity: 0; transform: translateY(14px) scale(0.96); filter: blur(8px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+@keyframes loader-line {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(320%); }
+}
+
+@keyframes blink {
+  0%, 45% { opacity: 1; }
+  46%, 100% { opacity: 0; }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-13px) rotate(1deg); }
+}
+
+@keyframes float-x {
+  0%, 100% { transform: translateX(0) translateY(0); }
+  50% { transform: translateX(10px) translateY(-7px); }
+}
+
+@keyframes rotate {
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes rotate-reverse {
+  to { transform: translate(-50%, -50%) rotate(-360deg); }
+}
+
+@keyframes pulse-ring {
+  0% { opacity: 0.8; transform: scale(0.8); }
+  100% { opacity: 0; transform: scale(1.8); }
+}
+
+@keyframes scroll-line {
+  0%, 100% { opacity: 0.25; transform: scaleY(0.55); transform-origin: top; }
+  50% { opacity: 1; transform: scaleY(1); transform-origin: top; }
+}
+
+@keyframes marquee {
+  to { transform: translateX(calc(-50% - 8px)); }
+}
+
+@keyframes client-marquee {
+  to { transform: translateX(-50%); }
+}
+
+@keyframes success-in {
+  0% { opacity: 0; transform: translateY(10px) scale(0.98); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(34px);
+  transition:
+    opacity 800ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal--left {
+  transform: translateX(-44px);
+}
+
+.reveal--right {
+  transform: translateX(44px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.services-grid .reveal:nth-child(2),
+.why-grid .reveal:nth-child(2),
+.process .reveal:nth-child(2),
+.stats-grid .reveal:nth-child(2) {
+  transition-delay: 80ms;
+}
+
+.services-grid .reveal:nth-child(3),
+.why-grid .reveal:nth-child(3),
+.process .reveal:nth-child(3),
+.stats-grid .reveal:nth-child(3) {
+  transition-delay: 160ms;
+}
+
+.services-grid .reveal:nth-child(4),
+.why-grid .reveal:nth-child(4),
+.process .reveal:nth-child(4),
+.stats-grid .reveal:nth-child(4) {
+  transition-delay: 240ms;
+}
+
+.services-grid .reveal:nth-child(5),
+.why-grid .reveal:nth-child(5) {
+  transition-delay: 320ms;
+}
+
+.services-grid .reveal:nth-child(6),
+.why-grid .reveal:nth-child(6) {
+  transition-delay: 400ms;
+}
+
+.services-grid .reveal:nth-child(7) { transition-delay: 480ms; }
+.services-grid .reveal:nth-child(8) { transition-delay: 560ms; }
+.services-grid .reveal:nth-child(9) { transition-delay: 640ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal--left,
+  .reveal--right {
+    opacity: 1;
+    transform: none;
+  }
+
+  .particle-canvas,
+  .orbit,
+  .scroll-indicator {
+    display: none;
+  }
+}
